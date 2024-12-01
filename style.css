@@ -16,10 +16,10 @@
 }
 
 html.light {
-    --hue: 194;
+
     --text-color: hsl(var(--hue), 5%, 7%);
     --bg-color: hsl(var(--hue), 40%, 98%);
-    --button-secondary: hsl(var(--hue), 5%, 7%);
+    --controls-bg-color: hsl(var(--hue), 0%, 14%);
 }
 
 html.light .ph-sun,
@@ -84,7 +84,7 @@ body {
 button {
     background-color: transparent;
     border: 0;
-    color: var(--primary-);
+    color: var(--primary-color);
 
     cursor: pointer;
 
@@ -98,8 +98,8 @@ button {
 .running .ph-play-circle,
 .running .ph-timer,
 .music-on .ph-speaker-none,
-html:not(.running).ph-pause-circle,
-html:not(.running).ph-stop-circle,
-html:not(.music-on).ph-speaker-high {
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle,
+html:not(.music-on) .ph-speaker-high {
     display: none;
 }
